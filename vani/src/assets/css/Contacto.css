@@ -1,0 +1,88 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #b3e0e0;
+    color: white;
+    padding: 60px;
+    border-radius: 20px;
+    margin: 50px auto; /* Auto horizontalmente y ajuste verticalmente */
+    margin-top: 20vh; /* Ajuste para centrar verticalmente */
+    width: 1200px;
+    transition: transform 0.3s ease; /* Transición suave */
+    
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.contact-container.shake {
+    animation: shake 0.5s; /* Duración de la animación */
+    animation-iteration-count: 1; /* Número de veces que se repite la animación */
+}
+
+
+.contact-content {
+    max-width: 80%;
+}
+
+.contact-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contact-content a {
+    color: #007074;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-content a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.contact-image img {
+    /* width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 4px solid #fff;  */
+
+    max-width: 210px;
+  max-height: 210px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 25px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* .contact-image img:hover {
+    transform: scale(1.1); 
+}
+ */

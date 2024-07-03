@@ -1,0 +1,29 @@
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #007074;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Asegura que el contenido esté alineado al final */
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    height: 80px; /* Ajusta según tus necesidades */
+    flex: 1 1 20%; /* Permite que haya 5 íconos por fila */
+  max-width: 20%;
+  }
+  
+  .skill p {
+    margin-bottom: auto; /* Empuja el texto hacia arriba */
+    font-size: 14px;
+  }
+  
+  .skill i {
+    color: #020202; /* Cambia el color si es necesario */
+  }
+  

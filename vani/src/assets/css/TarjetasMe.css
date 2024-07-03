@@ -1,0 +1,150 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    position: relative;
+}
+
+.card-align-right {
+    align-self: flex-end;
+    width: 50%;
+    max-width: 1000px; /* Ajusta según sea necesario */
+}
+
+.card-align-left {
+    align-self: flex-start;
+    width: 50%;
+    max-width: 1000px; /* Ajusta según sea necesario */
+}
+
+.card-align-center {
+    align-self: center;
+    width: 50%;
+    max-width: 1000px; /* Ajusta según sea necesario */
+}
+
+/* .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+.custom-card1 {
+    background: url('../imagenes/fondocardme.jfif') no-repeat center center;
+    background-size: cover;
+    opacity: 0.8;
+    color: black; 
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, opacity 0.3s;    
+    flex: 1 1 30%; 
+    margin: 10px;
+    transform: translateZ(20px);
+    
+    
+}
+
+.custom-card2 {
+    background: url('../imagenes/fondohabilidades.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.8; /* Ajusta la opacidad según sea necesario */
+    /* color: black; 
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, opacity 0.3s;
+    flex: 1 1 30%; 
+    margin: 10px;
+    transform: translateZ(20px); */
+    
+/* } */
+
+/* .custom-card3 {
+    background: url('../imagenes/fondopersonales.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.8; 
+    color: black; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, opacity 0.3s;
+    
+} */
+
+
+.custom-card .p-card-title {
+    color: black;
+}
+
+.custom-card .p-card-subtitle {
+    color: #fff;
+}
+
+.custom-card {
+    opacity: 0.8;
+    color: black;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, opacity 0.3s;
+    margin: 10px;
+    width: 900px;
+    height: 250px;
+}
+
+.custom-card1 {
+    background: url('../imagenes/fondohabilidades.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.custom-card2 {
+    background: url('../imagenes/fondohabilidades.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.custom-card3 {
+    background: url('../imagenes/fondohabilidades.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+.flecha {
+    position: absolute;
+    width: 500px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+}
+
+.flecha1 {
+    bottom: 5%; /* Ajusta la posición según sea necesario */
+    left: 10%; /* Ajusta la posición según sea necesario */
+    transform: rotate(165deg); /* Ajusta la rotación según sea necesario */
+}
+
+.flecha2 {
+    top: 10%; /* Ajusta la posición según sea necesario */
+    right: 10%; /* Ajusta la posición según sea necesario */
+    transform: rotate(2deg); /* Ajusta la rotación según sea necesario */
+}
+
+.flechaAnimation {
+    position: absolute;
+    width: 500px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    top: 5%; /* Ajusta la posición según sea necesario */
+    right: 5%; /* Ajusta la posición según sea necesario */
+    transform: rotate(80deg); 
+}

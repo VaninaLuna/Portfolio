@@ -1,0 +1,28 @@
+.home-container{
+    display: flex;
+    height: 100vh;
+}
+
+.left-side{
+    /* background-color: #FFFFFF; */    
+    background-image: url("./../imagenes/fondocompu5.jfif");
+    width: 50%;
+    position: relative;
+}
+
+.right-side{
+    /* background-color: #7FDAC7; */
+    background: linear-gradient(to right, #b1dbda 10%, #7FDAC7 90%);
+    width: 50%;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+

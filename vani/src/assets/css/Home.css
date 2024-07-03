@@ -1,0 +1,96 @@
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #b1dbda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.card-container {
+    position: relative;
+}
+
+#who-is-vanina {
+    z-index: 10;    
+    padding: 10px;
+}
+
+
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.top-section {
+    background-color:  linear-gradient(to right, #007074 5%, #85b8bc 50%, #7FDAC7 95%); /* Color superior */
+    height: 33.33%;
+    position: relative;
+    z-index: 1;
+}
+
+.torn-effect-top {
+    position: relative;
+    height: 50px;
+    background-color: linear-gradient(to right, #007074 5%, #85b8bc 50%, #7FDAC7 95%); /* Color medio */
+    z-index: 2;
+}
+
+.torn-effect-top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #007074; /* Color inferior */
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.middle-section {
+    background-color: #007074; /* Color medio */
+    height: 33.33%;
+    position: relative;
+    z-index: 1;
+}
+
+.torn-effect-bottom {
+    position: relative;
+    height: 50px;
+    background-color:  #56CFC6; /* Color superior */
+    z-index: 2;
+}
+
+.torn-effect-bottom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #007074; /* Color medio */
+    clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+}
+
+.bottom-section {
+    background-color: #56CFC6; /* Color inferior */
+    height: 33.33%;
+    position: relative;
+    z-index: 1;
+}
+
+.custom-card2 {
+    background: url('../imagenes/fondohabilidades.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.aboutme-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

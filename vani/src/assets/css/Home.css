@@ -3,7 +3,7 @@
     bottom: 20px;
     right: 20px;
     z-index: 1000;
-    background-color: #b1dbda;
+    background-color: #007074;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,8 +37,7 @@
 }
 
 .top-section {
-    background-color: linear-gradient(to right, #007074 5%, #85b8bc 50%, #7FDAC7 95%);
-    /* Color superior */
+    background-color: linear-gradient(to right, #85b8bc 50%, #7FDAC7 95%);
     height: 33.33%;
     position: relative;
     z-index: 1;
@@ -48,8 +47,7 @@
 .torn-effect-top {
     position: relative;
     height: 50px;
-    background-color: linear-gradient(to right, #007074 5%, #85b8bc 50%, #7FDAC7 95%);
-    /* Color medio */
+    background-color: linear-gradient(to right, #85b8bc 50%, #7FDAC7 95%);
     z-index: 2;
 }
 
@@ -61,13 +59,11 @@
     width: 100%;
     height: 50px;
     background-color: #007074;
-    /* Color inferior */
     clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
 }
 
 .middle-section {
     background-color: #007074;
-    /* Color medio */
     height: 33.33%;
     position: relative;
     z-index: 1;
@@ -80,7 +76,6 @@
     position: relative;
     height: 60px;
     background-color: #56CFC6;
-    /* Color superior */
     z-index: 2;
 }
 
@@ -92,13 +87,11 @@
     width: 100%;
     height: 60px;
     background-color: #007074;
-    /* Color medio */
     clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
 }
 
 .bottom-section {
     background-color: #56CFC6;
-    /* Color inferior */
     position: relative;
     z-index: 1;
     height: 100vh
@@ -142,7 +135,6 @@
 }
 
 #project-container {
-    /* background: #007074; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,7 +148,21 @@
 }
 
 #git-icon {
-    height: 40px
+    height: 30px;
+    margin-top: -3px;
+    vertical-align: middle;
+}
+
+#all-rights {
+    padding: 0 10px 0 0
+}
+
+footer {
+    margin-top: -40px;
+    padding-top: 40px;
+    padding-bottom: 1px;
+    /* background: linear-gradient(to right, #007074 5%, #2d9982 95%); */
+    background: linear-gradient(to right, #007074 5%, #85b8bc 50%, #7FDAC7 95%);
 }
 
 @media (max-width: 600px) {
@@ -192,7 +198,6 @@
     }
 }
 
-/* Media Queries para tablets */
 @media (min-width: 601px) and (max-width: 1600px) {
     .scroll-to-top-button {
         width: 45px;

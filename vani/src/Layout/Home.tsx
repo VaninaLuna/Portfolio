@@ -52,10 +52,6 @@ export function Home({ setActiveSection }: HomeProps) {
         };
     }, []);
 
-    const leftContent = (
-        <div></div>
-    );
-
     const rightContent = (
         <>
             <h1 className='rock-salt-regular'>Hi, I'm Vanina</h1>
@@ -134,7 +130,7 @@ export function Home({ setActiveSection }: HomeProps) {
             <div className='container'>
                 <div>
                     <section id="home"></section>
-                    <ColorBackground leftContent={leftContent} rightContent={rightContent} />
+                    <ColorBackground rightContent={rightContent} />
                 </div>
                 <div className='top-section'>
                     <br />
@@ -169,8 +165,8 @@ export function Home({ setActiveSection }: HomeProps) {
             </div>
             <footer>
                 <p>Designed & coded with 💜 by Vanina Luna</p>
-                <p>© 2024  |  All rights reserved</p>
                 <p>
+                    <span id='all-rights'>© 2024  |  All rights reserved</span>
                     <a href="https://github.com/VaninaLuna/" target="_blank">
                         <CIcon icon={cibGithub} size="custom-size" id='git-icon' />
                     </a>

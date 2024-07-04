@@ -71,38 +71,29 @@
 .flecha {
     position: absolute;
     width: 500px;
-    /* Ajusta el tamaño según sea necesario */
     height: auto;
 }
 
 .flecha1 {
     bottom: 5%;
-    /* Ajusta la posición según sea necesario */
     left: 10%;
-    /* Ajusta la posición según sea necesario */
     transform: rotate(165deg);
-    /* Ajusta la rotación según sea necesario */
 }
 
 .flecha2 {
     top: 10%;
-    /* Ajusta la posición según sea necesario */
     right: 10%;
-    /* Ajusta la posición según sea necesario */
     transform: rotate(2deg);
-    /* Ajusta la rotación según sea necesario */
 }
 
 .flechaAnimation {
     position: absolute;
     width: 450px;
-    /* Ajusta el tamaño según sea necesario */
     height: auto;
     top: 3%;
-    /* Ajusta la posición según sea necesario */
     right: 13%;
-    /* Ajusta la posición según sea necesario */
     transform: rotate(85deg);
+    z-index: -1;
 }
 
 #touch {

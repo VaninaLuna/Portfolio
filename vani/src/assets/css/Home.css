@@ -56,7 +56,7 @@
 .torn-effect-top::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 1px;
     left: 0;
     width: 100%;
     height: 50px;
@@ -73,12 +73,12 @@
     z-index: 1;
     background: #007074;
     width: 100%;
-    height: 100vh
+    height: 110vh
 }
 
 .torn-effect-bottom {
     position: relative;
-    height: 50px;
+    height: 60px;
     background-color: #56CFC6;
     /* Color superior */
     z-index: 2;
@@ -87,10 +87,10 @@
 .torn-effect-bottom::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -1px;
     right: 0;
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: #007074;
     /* Color medio */
     clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
@@ -152,7 +152,7 @@
 }
 
 .separator {
-    height: 410px
+    height: 500px
 }
 
 #git-icon {
@@ -232,7 +232,6 @@
     }
 
     .middle-section {
-        height: 150vh
+        height: 120vh
     }
-
 }

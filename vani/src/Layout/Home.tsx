@@ -152,7 +152,6 @@ export function Home({ setActiveSection }: HomeProps) {
                         <section id="project"></section>
                         <br />
                         <TarjetasProyecto />
-
                         <div className='separator'></div>
                         <h2>Skills & Tools</h2>
                         <p>The skills, tools and technologies I use to bring to life :</p>

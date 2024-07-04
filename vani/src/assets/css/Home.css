@@ -193,7 +193,7 @@
 }
 
 /* Media Queries para tablets */
-@media (min-width: 601px) and (max-width: 1300px) {
+@media (min-width: 601px) and (max-width: 1600px) {
     .scroll-to-top-button {
         width: 45px;
         height: 45px;

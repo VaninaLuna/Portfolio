@@ -76,7 +76,7 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1300px) {
+@media (min-width: 1024px) and (max-width: 1600px) {
     .projects-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

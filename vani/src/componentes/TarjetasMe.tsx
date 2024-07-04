@@ -39,9 +39,8 @@ export default function TarjetasMe() {
                 <p> <strong>I'm happiest when I'm creating, learning, exploring and thinking about how to improve things.
                     I'm available for freelance work, feel free to contact me and say hi.
                     I promise I won't bite 😉</strong>
-                    <p> <strong onClick={handleScrollToContact} id='touch'>Get In Touch</strong></p>
-
                 </p>
+                <p> <strong onClick={handleScrollToContact} id='touch'>Get In Touch</strong></p>
             </Card>
 
             <br />

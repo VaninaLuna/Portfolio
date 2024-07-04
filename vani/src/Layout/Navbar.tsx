@@ -53,7 +53,7 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
         },
     ];
 
-    const start = <img alt="logo" src={logo} height="200" className="navbar-logo"></img>;
+    const start = <img alt="logo" src={logo} className="navbar-logo"></img>;
 
     useEffect(() => {
         const handleHashChange = () => {

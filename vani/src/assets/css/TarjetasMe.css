@@ -25,63 +25,6 @@
     max-width: 1000px; /* Ajusta según sea necesario */
 }
 
-/* .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.custom-card:hover {
-    transform: translateY(-10px);
-    opacity: 1;
-}
-
-.custom-card1 {
-    background: url('../imagenes/fondocardme.jfif') no-repeat center center;
-    background-size: cover;
-    opacity: 0.8;
-    color: black; 
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, opacity 0.3s;    
-    flex: 1 1 30%; 
-    margin: 10px;
-    transform: translateZ(20px);
-    
-    
-}
-
-.custom-card2 {
-    background: url('../imagenes/fondohabilidades.jpg') no-repeat center center;
-    background-size: cover;
-    opacity: 0.8; /* Ajusta la opacidad según sea necesario */
-    /* color: black; 
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, opacity 0.3s;
-    flex: 1 1 30%; 
-    margin: 10px;
-    transform: translateZ(20px); */
-    
-/* } */
-
-/* .custom-card3 {
-    background: url('../imagenes/fondopersonales.jpg') no-repeat center center;
-    background-size: cover;
-    opacity: 0.8; 
-    color: black; 
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, opacity 0.3s;
-    
-} */
-
-
 .custom-card .p-card-title {
     color: black;
 }
@@ -142,9 +85,15 @@
 
 .flechaAnimation {
     position: absolute;
-    width: 500px; /* Ajusta el tamaño según sea necesario */
+    width: 450px; /* Ajusta el tamaño según sea necesario */
     height: auto;
-    top: 5%; /* Ajusta la posición según sea necesario */
-    right: 5%; /* Ajusta la posición según sea necesario */
-    transform: rotate(80deg); 
+    top: 3%; /* Ajusta la posición según sea necesario */
+    right: 13%; /* Ajusta la posición según sea necesario */
+    transform: rotate(85deg); 
+}
+
+#touch{
+    cursor: pointer;
+    color: #007074;
+    text-decoration: underline;
 }

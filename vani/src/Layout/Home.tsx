@@ -53,9 +53,7 @@ export function Home({ setActiveSection }: HomeProps) {
     }, []);
 
     const leftContent = (
-        <div>
-            {/* <h1 style={{ color: "black" }}>Welcome to My Portfolio</h1> */}
-        </div>
+        <div></div>
     );
 
     const rightContent = (
@@ -111,21 +109,25 @@ export function Home({ setActiveSection }: HomeProps) {
                 <Lottie
                     animationData={heartsAnimation}
                     loop={true}
-                    style={{ position: 'absolute', top: '31%', left: '90%', transform: 'translate(-50%, -50%)', width: 200, height: 200, zIndex: 10 }}
+                    className='lottie-common'
+                    id='lottie-heart'
+
                 />
             )}
             {showLetters && (
                 <Lottie
                     animationData={lettersAnimation}
                     loop={true}
-                    style={{ position: 'absolute', top: '73%', left: '34%', transform: 'translate(-50%, -50%)', width: 200, height: 200, zIndex: 10 }}
+                    className='lottie-common'
+                    id='lottie-code'
                 />
             )}
             {showGlasses && (
                 <Lottie
                     animationData={glassesAnimation}
                     loop={true}
-                    style={{ position: 'absolute', top: '35%', left: '44%', transform: 'translate(-50%, -50%)', width: 200, height: 200, zIndex: 10 }}
+                    className='lottie-common'
+                    id='lottie-search'
                 />
             )}
 
@@ -134,24 +136,24 @@ export function Home({ setActiveSection }: HomeProps) {
                     <section id="home"></section>
                     <ColorBackground leftContent={leftContent} rightContent={rightContent} />
                 </div>
-                <div className='top-section' style={{ background: 'linear-gradient(to right, #007074 5%, #85b8bc 50%, #7FDAC7 95%)', marginBottom: '70px', position: 'relative' }}>
+                <div className='top-section'>
                     <br />
                     <section id="aboutme"></section>
-                    <div id="who-is-vanina" style={{ position: 'absolute', top: '0', right: '150px', margin: '20px', zIndex: '2' }}>
-                        <p className='rock-salt-regular' style={{ fontSize: 'xx-large' }}>Who Is Vanina?</p>
+                    <div id="who-container">
+                        <p className='rock-salt-regular' id='who-is-vanina'>Who Is Vanina?</p>
                     </div>
                     <TarjetasMe />
                 </div>
 
                 <div className="torn-effect-top"></div>
 
-                <div className='middle-section' style={{ background: '#007074', width: '100%', height: '100vh' }}>
-                    <div style={{ margin: '0 auto', maxWidth: '2000px' }}>
+                <div className='middle-section'>
+                    <div id='project-container'>
                         <section id="project"></section>
                         <br />
                         <TarjetasProyecto />
 
-                        <div style={{ height: '410px' }}></div>
+                        <div className='separator'></div>
                         <h2>Skills & Tools</h2>
                         <p>The skills, tools and technologies I use to bring to life :</p>
                         <Skills />
@@ -160,7 +162,7 @@ export function Home({ setActiveSection }: HomeProps) {
 
                 <div className="torn-effect-bottom"></div>
 
-                <div className='bottom-section' style={{ background: '#56CFC6', height: '100vh' }}>
+                <div className='bottom-section'>
                     <section id="contact"></section>
                     <br />
                     <Contacto />
@@ -171,7 +173,7 @@ export function Home({ setActiveSection }: HomeProps) {
                 <p>© 2024  |  All rights reserved</p>
                 <p>
                     <a href="https://github.com/VaninaLuna/" target="_blank">
-                        <CIcon icon={cibGithub} size="custom-size" style={{ height: '40px' }} />
+                        <CIcon icon={cibGithub} size="custom-size" id='git-icon' />
                     </a>
                 </p>
             </footer>

@@ -54,7 +54,7 @@ export function Home({ setActiveSection }: HomeProps) {
 
     const rightContent = (
         <>
-            <h1 className='rock-salt-regular'>Hi, I'm Vanina</h1>
+            <h1 className='rock-salt-regular'>🖐️Hi, I'm Vanina</h1>
             <br />
             <div className='rammetto-one-regular'>
                 <p>

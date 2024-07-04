@@ -69,7 +69,7 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
     }, []);
 
     return (
-        <div className="card">
+        <div className="card-navbar">
             <Menubar model={items} end={start} className="custom-menubar" />
         </div>
     );

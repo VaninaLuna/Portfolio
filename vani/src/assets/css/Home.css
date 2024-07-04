@@ -16,7 +16,7 @@
 }
 
 #who-container {
-    z-index: 10;    
+    z-index: 10;
     padding: 10px;
     position: absolute;
     top: 0;
@@ -28,7 +28,7 @@
 #who-is-vanina {
     font-size: xx-large;
     text-decoration: underline;
-    text-underline-offset: 9px 
+    text-underline-offset: 9px
 }
 
 .container {
@@ -37,17 +37,19 @@
 }
 
 .top-section {
-    background-color:  linear-gradient(to right, #007074 5%, #85b8bc 50%, #7FDAC7 95%); /* Color superior */
+    background-color: linear-gradient(to right, #007074 5%, #85b8bc 50%, #7FDAC7 95%);
+    /* Color superior */
     height: 33.33%;
     position: relative;
-    z-index: 1;    
+    z-index: 1;
     margin-bottom: 70px
 }
 
 .torn-effect-top {
     position: relative;
     height: 50px;
-    background-color: linear-gradient(to right, #007074 5%, #85b8bc 50%, #7FDAC7 95%); /* Color medio */
+    background-color: linear-gradient(to right, #007074 5%, #85b8bc 50%, #7FDAC7 95%);
+    /* Color medio */
     z-index: 2;
 }
 
@@ -58,12 +60,14 @@
     left: 0;
     width: 100%;
     height: 50px;
-    background-color: #007074; /* Color inferior */
+    background-color: #007074;
+    /* Color inferior */
     clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
 }
 
 .middle-section {
-    background-color: #007074; /* Color medio */
+    background-color: #007074;
+    /* Color medio */
     height: 33.33%;
     position: relative;
     z-index: 1;
@@ -75,7 +79,8 @@
 .torn-effect-bottom {
     position: relative;
     height: 50px;
-    background-color:  #56CFC6; /* Color superior */
+    background-color: #56CFC6;
+    /* Color superior */
     z-index: 2;
 }
 
@@ -86,40 +91,45 @@
     right: 0;
     width: 100%;
     height: 50px;
-    background-color: #007074; /* Color medio */
+    background-color: #007074;
+    /* Color medio */
     clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
 }
 
 .bottom-section {
-    background-color: #56CFC6; /* Color inferior */   
+    background-color: #56CFC6;
+    /* Color inferior */
     position: relative;
     z-index: 1;
     height: 100vh
 }
 
 .custom-card2 {
-    background: url('../imagenes/fondohabilidades.jpg') no-repeat center center;
+    background: url('../imagenes/fondohabilidades.jpg') no-repeat center;
     background-size: cover;
 }
 
 .aboutme-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
 }
 
 #lottie-heart {
-    top: 31%; 
+    top: 31%;
     left: 90%
 }
 
 #lottie-code {
-    top: 73%; 
+    top: 73%;
     left: 34%
 }
 
 #lottie-search {
-    top: 35%; 
+    top: 35%;
     left: 44%
 }
 
@@ -132,9 +142,13 @@
 }
 
 #project-container {
-    background: #007074;
-    width: 100%;
-    height: 100vh
+    /* background: #007074; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
 }
 
 .separator {
@@ -143,4 +157,82 @@
 
 #git-icon {
     height: 40px
+}
+
+@media (max-width: 600px) {
+    .scroll-to-top-button {
+        width: 40px;
+        height: 40px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    #who-container {
+        right: 20px;
+        margin: 10px;
+    }
+
+    #who-is-vanina {
+        font-size: large;
+        text-underline-offset: 5px;
+    }
+
+    .top-section {
+        margin-bottom: 50px;
+    }
+
+    .middle-section,
+    .bottom-section {
+        height: auto;
+    }
+
+    .lottie-common {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Media Queries para tablets */
+@media (min-width: 601px) and (max-width: 1300px) {
+    .scroll-to-top-button {
+        width: 45px;
+        height: 45px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    #who-container {
+        right: 50px;
+        margin: 15px;
+    }
+
+    #who-is-vanina {
+        font-size: x-large;
+        text-underline-offset: 7px;
+    }
+
+
+    .top-section {
+        margin-bottom: 60px;
+    }
+
+    #lottie-heart {
+        top: 20%;
+        left: 76%
+    }
+
+    #lottie-search {
+        top: 37%;
+        left: 45%
+    }
+
+    .lottie-common {
+        width: 150px;
+        height: 150px;
+    }
+
+    .middle-section {
+        height: 150vh
+    }
+
 }

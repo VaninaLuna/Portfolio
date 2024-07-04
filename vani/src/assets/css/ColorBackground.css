@@ -1,17 +1,18 @@
-.home-container{
+.home-container {
     display: flex;
     height: 100vh;
 }
 
-.left-side{
-    /* background-color: #FFFFFF; */    
+.left-side {
     background-image: url("./../imagenes/fondocompu5.jfif");
     width: 50%;
     position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.right-side{
-    /* background-color: #7FDAC7; */
+.right-side {
     background: linear-gradient(to right, #b1dbda 10%, #7FDAC7 90%);
     width: 50%;
     position: relative;
@@ -26,3 +27,39 @@
     color: white;
 }
 
+@media (max-width: 600px) {
+    .left-side {
+        display: none;
+        /* Oculta el lado derecho en pantallas pequeñas */
+    }
+
+    .home-container {
+        flex-direction: column;
+        /* Cambia la dirección del flex a columna */
+    }
+
+    .right-side .content {
+        width: 100%;
+        /* Asegura que el contenedor ocupe el ancho completo */
+    }
+}
+
+/* Media Queries para tablets */
+@media (min-width: 601px) and (max-width: 1300px) {
+    .left-side {
+        background-image: url("./../imagenes/fondocompu5.jfif");
+        background-size: cover;
+        /* Mantiene la imagen cubriendo todo el contenedor */
+        background-position: center;
+        /* Centra la imagen en el contenedor */
+    }
+
+    .right-side .content {
+        margin-top: 50px;
+    }
+
+    .home-container {
+        display: flex;
+        height: 110vh;
+    }
+}

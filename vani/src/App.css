@@ -1,42 +1,5 @@
 #root {
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
 
 .rock-salt-regular {
@@ -57,25 +20,61 @@
 .fun-cover {
   -webkit-text-stroke: 2px #f3c9ad;
   cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
+.fun-cover:hover {
+  transform: scale(1.1);
+  background-color: #f3c9ad;
+  color: white;
+}
+
 .code-cover {
   -webkit-text-stroke: 2px #56afcf;
   cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
+.code-cover:hover {
+  transform: scale(1.1);
+  background-color: #56afcf;
+  color: white;
+}
+
 .loves-cover {
   -webkit-text-stroke: 2px #e8aab2;
   cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
+.loves-cover:hover {
+  transform: scale(1.1);
+  background-color: #e8aab2;
+  color: white;
+}
+
 .research-cover {
   -webkit-text-stroke: 2px #afa2c9;
   cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Añade este CSS a tu archivo de estilos */
+.research-cover:hover {
+  transform: scale(1.1);
+  background-color: #afa2c9;
+  color: white;
+}
+
 .custom-card {
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .custom-card .p-card-title {
@@ -92,48 +91,3 @@
   font-size: 1em;
   color: #444;
 }
-
-@keyframes border-animation {
-  0% {
-      border-color: transparent;
-      border-width: 0px 2px 2px 0px;
-  }
-  25% {
-      border-color: transparent transparent #127894aa transparent;
-      border-width: 2px 2px 0px 0px;
-  }
-  50% {
-      border-color: #127894aa transparent transparent transparent;
-      border-width: 2px 0px 0px 2px;
-  }
-  75% {
-      border-color: transparent transparent transparent #127894aa;
-      border-width: 0px 2px 2px 0px;
-  }
-  100% {
-      border-color: transparent;
-      border-width: 0px 2px 2px 0px;
-  }
-}
-
-.end-button {
-  position: relative;
-  padding: 10px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.end-button::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid transparent;
-  box-sizing: border-box;
-  animation: border-animation 2s infinite;
-  pointer-events: none; /* Asegura que el pseudo-elemento no interfiera con los clics */
-}
-

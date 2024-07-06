@@ -146,9 +146,11 @@ export function Home({ setActiveSection }: HomeProps) {
                 <div className='middle-section'>
                     <div id='project-container'>
                         <section id="project"></section>
+                        <h2 className="section-title rock-salt-regular">Projects</h2>
                         <br />
                         <TarjetasProyecto />
-                        <div className='separator'></div>
+                        <br />
+                        <br />
                         <h2>Skills & Tools</h2>
                         <p>The skills, tools and technologies I use to bring to life :</p>
                         <Skills />

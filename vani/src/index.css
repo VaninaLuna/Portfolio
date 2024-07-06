@@ -14,6 +14,47 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+
+  /*GLOBAL VARIABLES*/
+
+  /* colores de las propiedades */
+  --surface: #000000;
+  --surface-variant: #d8e6e7;
+  --surface-dim: #8da0a9;
+  --surface-bridge: #cde9ee;
+
+  --primary: var(--primary-60);
+  --on-surface-primary: var(--primary-10);
+  --on-primary: var(--primary-95);
+
+  --secndary: var(--secondary-70);
+  --on-surface-secondary: var(--secondary-95);
+  --on-secondary: var(--secondary-95);
+
+  /* texto  */
+  --text-xx-small: 0.8rem;
+  --text-x-small: 1rem;
+  --text-small: 1.2rem;
+  --text-medium: 1.4rem;
+  --text-large: 1.6rem;
+  --text-x-large: 2rem;
+  --text-xx-large: 3.1rem;
+  --text-xxx-large: 4.4rem;
+  --text-title: 2rem;
+  --text-general: 1.6rem;
+  --text-button: 1.2rem;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --max-width: 108rem;
+  --site-bg: var(--primary-0);
+  --hero-bg: linear-gradient(-54deg,
+      var(--primary-0) -23%,
+      var(--primary-20),
+      var(--primary-0) 51%);
+
+  /* --text-gradient: radial-gradient(circle farthest-corner at center center,
+      #58f9ff 0%,
+      #df44e7 100%); */
 }
 
 body,

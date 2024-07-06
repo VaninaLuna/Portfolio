@@ -70,7 +70,7 @@
     color: white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .left-side {
         display: none;
         /* Oculta el lado derecho en pantallas pequeñas */
@@ -84,6 +84,11 @@
     .right-side .content {
         width: 100%;
         /* Asegura que el contenedor ocupe el ancho completo */
+    }
+
+    .content {
+        text-align: center;
+        color: white;
     }
 }
 

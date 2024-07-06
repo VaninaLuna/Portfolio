@@ -17,12 +17,14 @@
     transition: transform 0.6s;
 }
 
-.project-card:hover .project-card-inner {
-    transform: rotateY(180deg);
+.icon-link {
+    height: 20px;
+    margin-left: 5px;
+    vertical-align: middle;
+    color: white !important;
 }
 
-.project-card-front,
-.project-card-back {
+.project-card-front {
     position: absolute;
     width: 100%;
     backface-visibility: hidden;
@@ -36,11 +38,11 @@
     color: #2d2d2d;
 }
 
-.project-card-back {
+/* .project-card-back {
     background: #2d2d2d;
     color: #ffffff;
     transform: rotateY(180deg);
-}
+} */
 
 .project-card img {
     width: 100%;
@@ -52,7 +54,7 @@
 
 .project-card-content {
     padding: 20px;
-    min-height: 200px;
+    min-height: 150px;
 }
 
 

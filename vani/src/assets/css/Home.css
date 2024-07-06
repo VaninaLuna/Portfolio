@@ -1,3 +1,13 @@
+.section-title {
+    font-size: 3rem;
+    background: radial-gradient(circle farthest-corner at center center, #58f9ff 0%, #dc86e0 100%);
+    background-clip: text;
+    color: transparent;
+    background-size: 100%;
+    padding: 30px;
+}
+
+
 .scroll-to-top-button {
     position: fixed;
     bottom: 20px;
@@ -38,10 +48,10 @@
 
 .top-section {
     background-color: linear-gradient(to right, #85b8bc 50%, #7FDAC7 95%);
-    height: 33.33%;
     position: relative;
     z-index: 1;
-    margin-bottom: 70px
+    width: 100%;
+    height: 120vh;
 }
 
 .torn-effect-top {
@@ -64,7 +74,6 @@
 
 .middle-section {
     background-color: #007074;
-    height: 33.33%;
     position: relative;
     z-index: 1;
     background: #007074;
@@ -95,11 +104,6 @@
     position: relative;
     z-index: 1;
     height: 100vh
-}
-
-.custom-card2 {
-    background: url('../imagenes/fondohabilidades.jpg') no-repeat center;
-    background-size: cover;
 }
 
 .aboutme-content {
@@ -143,10 +147,6 @@
     padding: 20px;
 }
 
-.separator {
-    height: 500px
-}
-
 #git-icon {
     height: 30px;
     margin-top: -3px;
@@ -165,7 +165,7 @@ footer {
     background: linear-gradient(to right, #007074 5%, #85b8bc 50%, #7FDAC7 95%);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .scroll-to-top-button {
         width: 40px;
         height: 40px;
@@ -174,8 +174,13 @@ footer {
     }
 
     #who-container {
-        right: 20px;
-        margin: 10px;
+        z-index: 10;
+        padding: 10px;
+        position: absolute;
+        top: -50px;
+        right: 0;
+        margin: 20px;
+        z-index: 2
     }
 
     #who-is-vanina {
@@ -187,6 +192,7 @@ footer {
         margin-bottom: 50px;
     }
 
+    .top-section,
     .middle-section,
     .bottom-section {
         height: auto;
@@ -196,9 +202,14 @@ footer {
         width: 150px;
         height: 150px;
     }
+
+    #who-container {
+        right: 20px;
+        margin: 10px;
+    }
 }
 
-@media (min-width: 601px) and (max-width: 1600px) {
+@media (min-width: 769px) and (max-width: 1600px) {
     .scroll-to-top-button {
         width: 45px;
         height: 45px;

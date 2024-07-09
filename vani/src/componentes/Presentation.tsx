@@ -16,7 +16,7 @@ export const Presentation: React.FC<Props> = ({ setShowConfetti,
     return (
         <section id="presentation" className="presentation-section">
             <div className="intro-description">
-                <h1 className='rock-salt-regular who-cover presentation-title'>🖐️Hi, I'm Vanina</h1>
+                <h1 className='rock-salt-regular who-cover'>🖐️<strong className='presentation-title'>Hi, I'm Vanina</strong></h1>
                 <div className='rammetto-one-regular'>
                     <p>
                         I enjoy creating&nbsp;

@@ -1,0 +1,37 @@
+.projects-section {
+    background-color: #007074;
+    position: relative;
+    z-index: 1;
+    background: #007074;
+    width: 100%;
+    height: auto
+}
+
+#project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.skills-description {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .projects-section {
+        height: auto
+    }
+
+    .skills-description {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1600px) {
+    .projects-section {
+        height: auto
+    }
+}

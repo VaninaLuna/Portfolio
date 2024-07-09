@@ -31,8 +31,13 @@ const Terminal: React.FC<TerminalProps> = ({ title, description, scrollToContact
                 <div className={terminal.content}>
                     <div className={terminal.terminal__skills}>
                         <div className={terminal.terminal__skills__container}>
-                            <p>{description}</p>
-                            {scrollToContact && <strong onClick={handleScrollToContact} id='touch'>Get In Touch</strong>}
+                            <a className={terminal.terminal__description}>{description}</a>
+                            {scrollToContact &&
+                                <strong className={terminal.terminal__description}
+                                    onClick={handleScrollToContact} id='touch'
+                                >
+                                    Get In Touch
+                                </strong>}
                         </div>
                     </div>
                 </div>

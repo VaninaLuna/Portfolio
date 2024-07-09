@@ -5,48 +5,80 @@
     flex-direction: column;
     margin-top: 20px;
     position: relative;
-    margin: 5%;
-}
-
-.card-align-right {
-    align-self: flex-end;
-    width: 40%;
-}
-
-.card-align-left {
-    align-self: flex-start;
-    width: 40%;
-}
-
-.card-align-center {
-    align-self: center;
-    width: 40%;
+    margin-bottom: 5%;
+    margin: 0 5% 5% 5%;
+    gap: 1rem
 }
 
 .custom-card {
     opacity: 0.8;
-    transition: transform 0.3s, opacity 0.3s;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .custom-card:hover {
     transform: translateY(-10px);
     opacity: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-card .p-card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.custom-card .p-card-subtitle {
+    font-size: 1em;
+    color: #888;
+}
+
+.custom-card .p-card-content {
+    font-size: 1em;
+    color: #444;
+}
+
+
+.card-align-right {
+    align-self: flex-end;
+    width: 60%;
+}
+
+.card-align-left {
+    align-self: flex-start;
+    width: 60%;
+}
+
+.card-align-center {
+    align-self: center;
+    width: 60%;
 }
 
 .flechaAnimation {
     position: absolute;
     width: 450px;
     height: auto;
-    top: 3%;
-    right: 10%;
+    top: 10%;
+    right: 0%;
     transform: rotate(85deg);
     z-index: -1;
 }
 
-#touch {
+/* #touch {
     cursor: pointer;
     color: #007074;
     text-decoration: underline;
+} */
+
+#touch {
+    cursor: pointer;
+    color: #646cff;
+    text-decoration: underline;
+}
+
+#touch:hover {
+    color: #535bf2;
 }
 
 
@@ -58,26 +90,42 @@
         align-items: center;
         flex-direction: column;
         position: relative;
+        margin: 0;
     }
 
-    .card-align-right {
-        align-self: center;
-        width: 50%;
-    }
-
+    .card-align-right,
+    .card-align-center,
     .card-align-left {
         align-self: center;
-        width: 50%;
-    }
-
-    .card-align-center {
-        align-self: center;
-        width: 50%;
+        width: 90%;
     }
 
     .flechaAnimation {
         display: none !important;
     }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        margin: 0;
+    }
+
+    .card-align-right,
+    .card-align-center,
+    .card-align-left {
+        align-self: center;
+        width: 90%;
+    }
+
+    .flechaAnimation {
+        display: none !important;
+    }
+
 }
 
 @media (min-width: 1024px) and (max-width: 1600px) {
@@ -87,5 +135,20 @@
         right: 4%;
         top: 20%;
         transform: rotate(80deg);
+    }
+
+    .card-align-right {
+        align-self: flex-end;
+        width: 60%;
+    }
+
+    .card-align-left {
+        align-self: flex-start;
+        width: 60%;
+    }
+
+    .card-align-center {
+        align-self: center;
+        width: 60%;
     }
 }

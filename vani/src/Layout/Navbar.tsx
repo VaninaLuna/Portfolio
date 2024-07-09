@@ -15,7 +15,7 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
             label: 'Home',
             icon: 'pi pi-home',
             command: () => {
-                const sectionId = document.getElementById('home')
+                const sectionId = document.getElementById('presentation')
                 if (sectionId)
                     sectionId.scrollIntoView({ behavior: 'smooth' })
             },

@@ -1,0 +1,57 @@
+.about-me-section {
+    /* background-color: linear-gradient(to right, #85b8bc 50%, #7FDAC7 95%); */
+    background-color: #b3e0e0;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
+
+#who-is-vanina {
+    text-decoration: underline;
+    text-underline-offset: 9px
+}
+
+@media screen and (max-width: 768px) {
+    #who-is-vanina {
+        font-size: xx-large;
+        font-weight: 200;
+        padding-bottom: 20px;
+    }
+
+    .about-me-section {
+        padding-bottom: 5%
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #who-is-vanina {
+        font-size: xx-large;
+    }
+
+    .about-me-section {
+        padding-bottom: 5%
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1600px) {
+    #who-container {
+        position: absolute;
+        right: 100px;
+        z-index: 1
+    }
+}
+
+@media (min-width: 1601px) {
+    .about-me-section {
+        height: 120vh;
+        padding-top: 40px;
+    }
+
+    #who-container {
+        position: absolute;
+        right: 10px;
+        top: -60px;
+        z-index: 1
+    }
+}

@@ -26,7 +26,6 @@
 
 .custom-menubar .active {
     background-color: #f3c9ad;
-    ;
     color: #fff;
 }
 
@@ -41,23 +40,37 @@
     display: block;
     margin: 0 auto;
     position: absolute;
-    top: -20px;
-    left: 90%;
+    top: -15px;
+    left: 80%;
     transform: translateX(-50%);
     z-index: 2;
     opacity: 0.7;
     height: 200px;
 }
 
-@media (max-width: 600px) {
+
+@media screen and (max-width: 768px) {
     .navbar-logo {
         height: 100px;
     }
 }
 
 /* Media Queries para tablets */
-@media (min-width: 601px) and (max-width: 1600px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .navbar-logo {
         height: 150px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+    .navbar-logo {
+        height: 200px;
+    }
+}
+
+@media (min-width: 1601px) {
+    .navbar-logo {
+        height: 200px;
+        left: 90%;
     }
 }

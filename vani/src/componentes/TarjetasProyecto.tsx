@@ -1,4 +1,3 @@
-import './../assets/css/TarjetasProyectos.css';
 import './../assets/css/CardProject.css';
 import deliveryImage from './../assets/imagenes/delivery.png';
 import reconocimientoImage from './../assets/imagenes/reconocimiento.png';
@@ -42,32 +41,6 @@ export default function TarjetasProyecto() {
 
     return (
         <>
-            {/* <div className="projects-container" >
-                {proyectos.map((proyecto, index) => (
-                    <div className="project-card" key={index}>
-                        <div className="project-card-inner">
-                            <div className="project-card-front">
-                                <img src={proyecto.image} alt={proyecto.title} />
-                                <div className="project-card-content">
-                                    <h3>{proyecto.title}</h3>
-                                    <p>{proyecto.description}</p>
-
-                                </div>
-                                <div>
-                                    <a href={proyecto.link} target='_blank'>
-                                        <span>
-                                            Github
-                                            {(<CIcon icon={cibGithub} className='icon-git' size="custom-size" />)}
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                ))}
-            </div> */}
-
-
             <div className="portfolio__container">
                 <div className="portfolio__elements">
                     {proyectos.map((proyecto, index) => (

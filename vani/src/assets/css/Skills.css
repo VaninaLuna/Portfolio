@@ -23,15 +23,41 @@
 
 .skill p {
   margin-bottom: auto;
-  /* Empuja el texto hacia arriba */
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .skill i {
   color: #020202;
-  /* Cambia el color si es necesario */
 }
 
 .skill-icon {
-  font-size: '2em';
+  font-size: 2em;
 }
+
+/* @media (min-width: 1025px) and (max-width: 1600px) {
+  .skill p {
+    font-size: 20px;
+  }
+
+  .skill {
+    margin: 10px;
+    text-align: center;
+    height: 120px;
+    flex: 1 1 20%;
+    max-width: 20%;
+  }
+} */
+
+/* @media (min-width: 1601px) {
+  .skill p {
+    font-size: 20px;
+  }
+
+  .skill {
+    margin: 10px;
+    text-align: center;
+    height: 120px;
+    flex: 1 1 20%;
+    max-width: 20%;
+  }
+} */

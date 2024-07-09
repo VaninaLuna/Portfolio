@@ -1,18 +1,17 @@
 import { useState, useEffect } from 'react';
-import ColorBackground from '../componentes/colorBackground';
+import { Button } from 'primereact/button';
+import { cibGithub } from '@coreui/icons';
+import CIcon from '@coreui/icons-react';
 import Confetti from 'react-confetti';
 import Lottie from 'lottie-react';
 import heartsAnimation from '../assets/animations/hearts.json';
-import lettersAnimation from '../assets/animations/letters.json';
+import lettersAnimation from '../assets/animations/letters2.json';
 import glassesAnimation from '../assets/animations/glasses.json';
-import TarjetasMe from '../componentes/TarjetasMe';
-import TarjetasProyecto from '../componentes/TarjetasProyecto';
+import { Presentation } from '../componentes/Presentation';
+import AboutMe from '../componentes/AboutMe';
+import Projects from '../componentes/Projects';
 import Contacto from '../componentes/Contacto';
-import { Button } from 'primereact/button';
 import './../assets/css/Home.css';
-import Skills from '../componentes/Skills&Tools';
-import CIcon from '@coreui/icons-react';
-import { cibGithub } from '@coreui/icons';
 
 type HomeProps = {
     setActiveSection: (sectionId: string) => void;
@@ -52,54 +51,32 @@ export function Home({ setActiveSection }: HomeProps) {
         };
     }, []);
 
-    const rightContent = (
-        <>
-            <h1 className='rock-salt-regular'>🖐️Hi, I'm Vanina</h1>
-            <br />
-            <div className='rammetto-one-regular'>
-                <p>
-                    I enjoy creating&nbsp;
-                    <span
-                        className='fun-cover'
-                        onMouseEnter={() => setShowConfetti(true)}
-                        onMouseLeave={() => setShowConfetti(false)}
-                    >
-                        fun
-                    </span>
-                    &nbsp;and interactive projects with&nbsp;
-                    <span
-                        className='code-cover'
-                        onMouseEnter={() => setShowLetters(true)}
-                        onMouseLeave={() => setShowLetters(false)}
-                    >
-                        code
-                    </span>.
-                </p>
-                <p>
-                    I'm a person who&nbsp;
-                    <span
-                        className='loves-cover'
-                        onMouseEnter={() => setShowHearts(true)}
-                        onMouseLeave={() => setShowHearts(false)}
-                    >
-                        loves
-                    </span>
-                    &nbsp;to&nbsp;
-                    <span
-                        className='research-cover'
-                        onMouseEnter={() => setShowGlasses(true)}
-                        onMouseLeave={() => setShowGlasses(false)}
-                    >
-                        research
-                    </span>
-                    &nbsp;and learn constantly to provide the best.
-                </p>
-            </div>
-        </>
-    );
 
     return (
         <>
+            <div className='container'>
+                <Presentation setShowConfetti={setShowConfetti}
+                    setShowLetters={setShowLetters}
+                    setShowHearts={setShowHearts}
+                    setShowGlasses={setShowGlasses} />
+
+                <br />
+                <AboutMe />
+                <div className="torn-effect-top"></div>
+                <Projects />
+                <div className="torn-effect-bottom"></div>
+                <Contacto />
+            </div>
+            <footer>
+                <p>Designed & coded with 💜 by Vanina Luna</p>
+                <p>
+                    <span id='all-rights'>© 2024  |  All rights reserved</span>
+                    <a href="https://github.com/VaninaLuna/" target="_blank">
+                        <CIcon icon={cibGithub} size="custom-size" id='git-icon' />
+                    </a>
+                </p>
+            </footer>
+
             {showConfetti && <Confetti width={window.innerWidth} height={window.innerHeight} />}
             {showHearts && (
                 <Lottie
@@ -107,7 +84,6 @@ export function Home({ setActiveSection }: HomeProps) {
                     loop={true}
                     className='lottie-common'
                     id='lottie-heart'
-
                 />
             )}
             {showLetters && (
@@ -127,53 +103,6 @@ export function Home({ setActiveSection }: HomeProps) {
                 />
             )}
 
-            <div className='container'>
-                <div>
-                    <section id="home"></section>
-                    <ColorBackground rightContent={rightContent} />
-                </div>
-                <div className='top-section'>
-                    <br />
-                    <section id="aboutme"></section>
-                    <div id="who-container">
-                        <p className='rock-salt-regular' id='who-is-vanina'>Who Is Vanina?</p>
-                    </div>
-                    <TarjetasMe />
-                </div>
-
-                <div className="torn-effect-top"></div>
-
-                <div className='middle-section'>
-                    <div id='project-container'>
-                        <section id="project"></section>
-                        <h2 className="section-title rock-salt-regular">Projects</h2>
-                        <br />
-                        <TarjetasProyecto />
-                        <br />
-                        <br />
-                        <h2>Skills & Tools</h2>
-                        <p>The skills, tools and technologies I use to bring to life :</p>
-                        <Skills />
-                    </div>
-                </div>
-
-                <div className="torn-effect-bottom"></div>
-
-                <div className='bottom-section'>
-                    <section id="contact"></section>
-                    <br />
-                    <Contacto />
-                </div>
-            </div>
-            <footer>
-                <p>Designed & coded with 💜 by Vanina Luna</p>
-                <p>
-                    <span id='all-rights'>© 2024  |  All rights reserved</span>
-                    <a href="https://github.com/VaninaLuna/" target="_blank">
-                        <CIcon icon={cibGithub} size="custom-size" id='git-icon' />
-                    </a>
-                </p>
-            </footer>
             {showScrollButton && (
                 <Button
                     icon="pi pi-arrow-up"
@@ -188,3 +117,4 @@ export function Home({ setActiveSection }: HomeProps) {
         </>
     );
 }
+

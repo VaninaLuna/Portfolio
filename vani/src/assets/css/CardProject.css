@@ -112,7 +112,6 @@
     display: flex;
     gap: 10px;
     font-size: 3rem;
-    /* Estamos usando rem para los textos */
 }
 
 .card__portfolio .buttons {
@@ -156,3 +155,56 @@
     align-items: center;
     gap: 4px;
 }
+
+.icon-link {
+    height: 20px;
+    margin-left: 5px;
+    vertical-align: middle;
+    color: white !important;
+}
+
+/* @media (min-width: 1601px) {
+    .portfolio__elements {
+        max-width: 100%;
+    }
+
+    .card__portfolio {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .card__portfolio img {
+        object-fit: cover;
+        object-position: center 0;
+        height: 100%;
+        width: 100%;
+        background: #000;
+    }
+
+    .card__portfolio:hover .descripcion__container {
+        transform: translateY(30%);
+        padding-top: 55px;
+    }
+
+    .card__portfolio:hover .descripcion p {
+        overflow: auto;
+        white-space: wrap;
+        height: 250px;
+    }
+
+    .card__portfolio .descripcion p {
+        font-size: 1.6rem;
+        height: 150px;
+    }
+
+    .card__portfolio .buttons {
+        font-size: 25px;
+        padding: 60px;
+    }
+
+    .icon-link {
+        margin-left: 8px;
+        font-size: 2rem;
+        height: auto;
+    }
+} */

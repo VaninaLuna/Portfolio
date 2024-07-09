@@ -22,15 +22,15 @@ export default function TarjetasMe() {
                 loop={true}
                 className='flechaAnimation'
             />
-            <div id="about-me-card" className="custom-card custom-card1 card-align-left">
+            <div id="about-me-card" className="custom-card card-align-left">
                 <Terminal title="AboutMe" description={description1} scrollToContact={false} />
             </div>
             <br />
-            <div className="custom-card custom-card2 card-align-center" title="Technical Skills">
+            <div className="custom-card card-align-center" title="Technical Skills">
                 <Terminal title="TechnicalSkills" description={description2} scrollToContact={false} />
             </div>
             <br />
-            <div className="custom-card custom-card3 card-align-right" title="Contact Me">
+            <div className="custom-card card-align-right" title="Contact Me">
                 <Terminal title="ContactMe" description={description3} scrollToContact={true} />
             </div>
         </div>

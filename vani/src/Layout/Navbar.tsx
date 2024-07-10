@@ -11,7 +11,7 @@ type NavbarProps = {
 
 export default function Navbar({ activeSection, setActiveSection }: NavbarProps) {
     const { t, i18n } = useTranslation();
-    const [language, setLanguage] = useState('English');
+    const [language, setLanguage] = useState('Español');
 
     const items = [
         {
@@ -65,7 +65,7 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
     const start = <img alt="logo" src={logo} className="navbar-logo"></img>;
 
     const changeLanguage = () => {
-        const lng = language === 'English' ? 'es' : 'en';
+        const lng = language === 'Español' ? 'es' : 'en';
         const newLng = language === 'English' ? 'Español' : 'English'
         setLanguage(newLng);
         i18n.changeLanguage(lng);
@@ -83,13 +83,6 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
         };
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
-
-    // const end = (
-    //     <div className="language-buttons">
-    //         <button onClick={() => changeLanguage('en')}>EN</button>
-    //         <button onClick={() => changeLanguage('es')}>ES</button>
-    //     </div>
-    // );
 
     return (
         <div className="card-navbar">

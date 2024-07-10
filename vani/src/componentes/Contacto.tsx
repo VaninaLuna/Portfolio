@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import './../assets/css/Contacto.css';
 import contactImage from './../assets/imagenes/cv.jpg'; // Reemplaza con la ruta correcta de tu imagen
+import { useTranslation } from 'react-i18next';
 
 export default function Contacto() {
     const [isShaking, setIsShaking] = useState(false);
+    const { t } = useTranslation();
 
     const handleMouseEnter = () => {
         setIsShaking(true);
@@ -14,10 +16,10 @@ export default function Contacto() {
             <br />
             <div className={`contact-container ${isShaking ? 'shake' : ''}`}>
                 <div className="contact-content">
-                    <h1>Get In Touch</h1>
-                    <p>Want to say hi, ask me for my resume or see if we can do something awesome together?</p>
-                    <p>I'd love to hear from you.</p>
-                    <p>Pop me an email at hi<strong><a href="mailto: vani.lunaa@gmail.com"> vani.lunaa@gmail.com</a></strong> or give me a shout on social media.</p>
+                    <h1>{t('contact.title')}</h1>
+                    <p>{t('contact.description1')}</p>
+                    <p>{t('contact.description2')}</p>
+                    <p>{t('contact.description3')}<strong><a href="mailto: vani.lunaa@gmail.com"> vani.lunaa@gmail.com</a></strong> {t('contact.description4')}</p>
                     <div className="social-icons">
                         <a href="https://www.instagram.com/vanilunita/" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-instagram"></i>

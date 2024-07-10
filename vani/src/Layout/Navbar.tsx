@@ -1,7 +1,8 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Menubar } from 'primereact/menubar';
 import './../assets/css/Navbar.css';
 import logo from './../assets/imagenes/logoVani.png';
+import { useTranslation } from 'react-i18next';
 
 type NavbarProps = {
     activeSection: string
@@ -9,10 +10,12 @@ type NavbarProps = {
 };
 
 export default function Navbar({ activeSection, setActiveSection }: NavbarProps) {
+    const { t, i18n } = useTranslation();
+    const [language, setLanguage] = useState('English');
 
     const items = [
         {
-            label: 'Home',
+            label: t('navbar.home'),
             icon: 'pi pi-home',
             command: () => {
                 const sectionId = document.getElementById('presentation')
@@ -22,7 +25,7 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
             className: activeSection === 'home' ? 'active' : '',
         },
         {
-            label: 'About Me',
+            label: t('navbar.about'),
             icon: 'pi pi-star',
             command: () => {
                 const sectionId = document.getElementById('aboutme')
@@ -32,7 +35,7 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
             className: activeSection === 'aboutme' ? 'active' : '',
         },
         {
-            label: 'Projects',
+            label: t('navbar.projects'),
             icon: 'pi pi-search',
             command: () => {
                 const sectionId = document.getElementById('project')
@@ -42,7 +45,7 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
             className: activeSection === 'project' ? 'active' : '',
         },
         {
-            label: 'Contact',
+            label: t('navbar.contact'),
             icon: 'pi pi-envelope',
             command: () => {
                 const sectionId = document.getElementById('contact')
@@ -51,9 +54,22 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
             },
             className: activeSection === 'contact' ? 'active' : '',
         },
+
+        {
+            label: language,
+            icon: 'pi pi-language',
+            command: () => { changeLanguage() },
+        }
     ];
 
     const start = <img alt="logo" src={logo} className="navbar-logo"></img>;
+
+    const changeLanguage = () => {
+        const lng = language === 'English' ? 'es' : 'en';
+        const newLng = language === 'English' ? 'Español' : 'English'
+        setLanguage(newLng);
+        i18n.changeLanguage(lng);
+    };
 
     useEffect(() => {
         const handleHashChange = () => {
@@ -67,6 +83,13 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
         };
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
+
+    // const end = (
+    //     <div className="language-buttons">
+    //         <button onClick={() => changeLanguage('en')}>EN</button>
+    //         <button onClick={() => changeLanguage('es')}>ES</button>
+    //     </div>
+    // );
 
     return (
         <div className="card-navbar">

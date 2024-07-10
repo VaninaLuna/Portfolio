@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import terminal from './../assets/css/terminal.module.css';
 import { ReactNode } from 'react';
 
@@ -8,6 +9,7 @@ interface TerminalProps {
 }
 
 const Terminal: React.FC<TerminalProps> = ({ title, description, scrollToContact }) => {
+    const { t } = useTranslation();
 
     const handleScrollToContact = () => {
         const contactSection = document.getElementById('contact');
@@ -36,7 +38,7 @@ const Terminal: React.FC<TerminalProps> = ({ title, description, scrollToContact
                                 <strong className={terminal.terminal__description}
                                     onClick={handleScrollToContact} id='touch'
                                 >
-                                    Get In Touch
+                                    {t('aboutMe.contact')}
                                 </strong>}
                         </div>
                     </div>

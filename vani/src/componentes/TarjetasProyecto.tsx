@@ -3,37 +3,36 @@ import deliveryImage from './../assets/imagenes/delivery.png';
 import reconocimientoImage from './../assets/imagenes/reconocimiento.png';
 import musicalImage from './../assets/imagenes/musical.png';
 import videoImage from './../assets/imagenes/videojuegos.png';
+import { useTranslation } from 'react-i18next';
 
 export default function TarjetasProyecto() {
+    const { t } = useTranslation()
+
     const proyectos = [
         {
-            title: "Supercita Store",
+            title: t('projects.subtitle1'),
             image: videoImage,
-            // description1: "Tienda de video juego, que permite venta y compra de articulos gamers, loguin de usuarios y ranking de ventas, desarrollada en Springboot",
-            description: "Video game store, allowing sale and purchase of gamers items, user login and sales ranking, developed in Springboot.",
+            description: t('projects.description1'),
             link: "https://github.com/VaninaLuna/Tienda-videojuegos"
         },
         {
-            title: "Facial Recognition ",
+            title: t('projects.subtitle2'),
             image: reconocimientoImage,
-            // description1: "Ingreso para cualquier plataforma mediante reconocimiento facial, manejo de registros y roles desarrollado en Python",
-            description: "Login for any platform using facial recognition, log management and roles developed in Python.",
+            description: t('projects.description2'),
             link: "https://github.com/GrupoNmii/Reconocimiento-Facial"
         },
 
         {
-            title: "Hendrix Store",
+            title: t('projects.subtitle3'),
             image: musicalImage,
-            // description1: "Tienda de instrumentos musicales con manejo de Dashboard, carrito de compras con integracion de mercado pago y loguin de acceso encriptado",
-            description: "Musical instruments store with Dashboard management, shopping cart with Mercado Pago integration and encrypted login.",
+            description: t('projects.description3'),
             link: "https://github.com/VaninaLuna/tienda-instrumentos"
         },
 
         {
-            title: "Buen Sabor",
+            title: t('projects.subtitle4'),
             image: deliveryImage,
-            // description1: "Es un delivery de comida rapida con manejo de Dashboard,carrito de compras con integracion de mercado pago, posee loguin en auth0 y manejo de roles",
-            description: "It is a fast food delivery with Dashboard management, shopping cart with payment market integration, has auth0 login and role management.",
+            description: t('projects.description4'),
             link: "https://github.com/VaninaLuna/BuenSabor-M"
         },
 
@@ -58,15 +57,6 @@ export default function TarjetasProyecto() {
                                 <h2 className="card__title">{proyecto.title}</h2>
                                 <div className="descripcion">
                                     <p>{proyecto.description}</p>
-
-                                    {/* <div className="skills">
-                                        {
-                                            skills.map((skill) => (
-                                                <iconify-icon class="iconify" icon={skill} />
-                                            ))
-                                        }
-                                    </div> */}
-
                                     <div className="buttons">
                                         <a href={proyecto.link} target='_blank'>
                                             <span>

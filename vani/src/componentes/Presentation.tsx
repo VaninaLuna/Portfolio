@@ -1,5 +1,7 @@
-import yo from './../assets/imagenes/yodefinitiva.jfif'
-import './../assets/css/Presentation.css'
+import React from 'react';
+import yo from './../assets/imagenes/yodefinitiva.jfif';
+import './../assets/css/Presentation.css';
+import { useTranslation } from 'react-i18next';
 
 interface Props {
     setShowConfetti: (value: boolean) => void;
@@ -8,52 +10,50 @@ interface Props {
     setShowGlasses: (value: boolean) => void;
 }
 
-export const Presentation: React.FC<Props> = ({ setShowConfetti,
-    setShowLetters,
-    setShowHearts,
-    setShowGlasses }) => {
+export const Presentation: React.FC<Props> = ({ setShowConfetti, setShowLetters, setShowHearts, setShowGlasses }) => {
+    const { t } = useTranslation();
 
     return (
         <section id="presentation" className="presentation-section">
             <div className="intro-description">
-                <h1 className='rock-salt-regular who-cover'>🖐️<strong className='presentation-title'>Hi, I'm Vanina</strong></h1>
+                <h1 className='rock-salt-regular who-cover'>🖐️<strong className='presentation-title'>{t('presentation.title')}</strong></h1>
                 <div className='rammetto-one-regular'>
                     <p>
-                        I enjoy creating&nbsp;
+                        {t('presentation.intro1')}
                         <span
                             className='fun-cover'
                             onMouseEnter={() => setShowConfetti(true)}
                             onMouseLeave={() => setShowConfetti(false)}
                         >
-                            fun
+                            {t('presentation.fun')}
                         </span>
-                        &nbsp;and interactive projects with&nbsp;
+                        &nbsp;{t('presentation.with')}&nbsp;
                         <span
                             className='code-cover'
                             onMouseEnter={() => setShowLetters(true)}
                             onMouseLeave={() => setShowLetters(false)}
                         >
-                            code
+                            {t('presentation.code')}
                         </span>.
                     </p>
                     <p>
-                        I'm a person who
+                        {t('presentation.intro2')}
                         &nbsp;<span
                             className='loves-cover'
                             onMouseEnter={() => setShowHearts(true)}
                             onMouseLeave={() => setShowHearts(false)}
                         >
-                            loves
+                            {t('presentation.loves')}
                         </span>&nbsp;
-                        to&nbsp;
+                        {t('presentation.to')}&nbsp;
                         <span
                             className='research-cover'
                             onMouseEnter={() => setShowGlasses(true)}
                             onMouseLeave={() => setShowGlasses(false)}
                         >
-                            research
+                            {t('presentation.research')}
                         </span>&nbsp;
-                        and learn constantly to provide the best.
+                        {t('presentation.andLearn')}.
                     </p>
                 </div>
             </div>

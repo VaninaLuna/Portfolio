@@ -45,6 +45,10 @@ const resources = {
                 "description3": "Musical instruments store with Dashboard management, shopping cart with Mercado Pago integration and encrypted login.",
                 "subtitle4": "Buen Sabor",
                 "description4": "It is a fast food delivery with Dashboard management, shopping cart with payment market integration, has auth0 login and role management.",
+                "subtitle5": "Global News",
+                "description5": "Business journal, designed to manage several companies and all the news related to each one. Developed in php.",
+                "subtitle6": "Accounting entries system",
+                "description6": "Accounting system that allows to make entries, load and edit charts of accounts and keep track of the movements of each year. Developed in php.",
             },
             "skills": {
                 "title": "Skills & Tools",
@@ -104,6 +108,10 @@ const resources = {
                 "description3": "Tienda de instrumentos musicales con manejo de Dashboard, carrito de compras con integracion de mercado pago y loguin de acceso encriptado.",
                 "subtitle4": "Buen Sabor",
                 "description4": "Es un delivery de comida rapida con manejo de Dashboard,carrito de compras con integracion de mercado pago, posee loguin en auth0 y manejo de roles.",
+                "subtitle5": "Noticias Global",
+                "description5": "Diario empresarial, diseñado para manejar varias empresas y todas las noticias relacionadas a cada una. Desarrollado en php.",
+                "subtitle6": "Sistema de asientos contables",
+                "description6": "Sistema de contable que permite realizar asientos, cargar y editar planes de cuentas y llevar un control de los movimientos de cada ejercicio. Desarrollado en php.",
             },
             "skills": {
                 "title": "Habilidades y Herramientas",

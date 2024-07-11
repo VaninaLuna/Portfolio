@@ -3,6 +3,8 @@ import deliveryImage from './../assets/imagenes/delivery.png';
 import reconocimientoImage from './../assets/imagenes/reconocimiento.png';
 import musicalImage from './../assets/imagenes/musical.png';
 import videoImage from './../assets/imagenes/videojuegos.png';
+import tiendaImage from './../assets/imagenes/diario.png';
+import contableImage from './../assets/imagenes/contable.png';
 import { useTranslation } from 'react-i18next';
 
 export default function TarjetasProyecto() {
@@ -34,6 +36,18 @@ export default function TarjetasProyecto() {
             image: deliveryImage,
             description: t('projects.description4'),
             link: "https://github.com/VaninaLuna/BuenSabor-M"
+        },
+        {
+            title: t('projects.subtitle5'),
+            image: tiendaImage,
+            description: t('projects.description5'),
+            link: "https://github.com/VaninaLuna/global-news"
+        },
+        {
+            title: t('projects.subtitle6'),
+            image: contableImage,
+            description: t('projects.description6'),
+            link: "https://github.com/VaninaLuna/sistema-contable"
         },
 
     ];
